@@ -28,7 +28,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Ppsnationalnumber  {
+public class Flynationalnum  {
 	@Test
 	public static void pps() throws IOException, InterruptedException{
 
@@ -48,11 +48,11 @@ public class Ppsnationalnumber  {
 	driver.switchTo().frame("designstudio-iframe");
 	driver.findElement(By.id("icon-close")).click();
 	Thread.sleep(3000);
-	WebElement pack= driver.findElement(By.xpath("(//input[@class='choose-package btn submitButton'])[1]"));
+	WebElement pack= driver.findElement(By.xpath("(//input[@class='choose-package btn submitButton'])[3]"));
 	pack.click();
 	//driver.navigate().to("https://aslive-www.moneypenny.com/uk/pocket-phone-system/#Emailhttps://test-www.moneypenny.com/uk/pocket-phone-system/#Email");
 	WebElement email1= driver.findElement(By.id("Email"));
-	email1.sendKeys("moneypennytest+aiswarya@gmail.com");
+	email1.sendKeys("moneypennytest+aiswarya55+1@gmail.com");
 	driver.findElement(By.xpath(prop.getProperty("go"))).click();
 	Thread.sleep(5000);
 	WebElement radioBtn = driver.findElement(By.xpath("(//div[@class='number-type__tab']//div/label)[1]"));
@@ -105,6 +105,8 @@ public class Ppsnationalnumber  {
 	
 }
 }
+
+
 
 
 

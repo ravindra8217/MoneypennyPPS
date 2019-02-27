@@ -33,7 +33,7 @@ public class PpsExistingnumber  {
 	public static void pps() throws IOException, InterruptedException{
 
     Properties prop= new Properties();
-	FileInputStream ip= new FileInputStream("C:\\Users\\Ravali\\eclipse-workspace\\PocketPhoneSystem\\src\\PocketPhoneSystem\\Configpps.properties");
+	FileInputStream ip= new FileInputStream("C:\\Users\\Ravali\\git\\MoneypennyPPS\\PocketPhoneSystem\\src\\PocketPhoneSystem\\Configpps.properties");
 	prop.load(ip);
 	WebDriver driver= new ChromeDriver();
 	driver.manage().window().maximize();

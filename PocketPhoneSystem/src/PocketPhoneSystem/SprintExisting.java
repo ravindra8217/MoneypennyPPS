@@ -28,7 +28,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class Ppsnationalnumber  {
+public class SprintExisting  {
 	@Test
 	public static void pps() throws IOException, InterruptedException{
 
@@ -48,24 +48,24 @@ public class Ppsnationalnumber  {
 	driver.switchTo().frame("designstudio-iframe");
 	driver.findElement(By.id("icon-close")).click();
 	Thread.sleep(3000);
-	WebElement pack= driver.findElement(By.xpath("(//input[@class='choose-package btn submitButton'])[1]"));
+	WebElement pack= driver.findElement(By.xpath("(//input[@class='choose-package btn submitButton'])[2]"));
 	pack.click();
 	//driver.navigate().to("https://aslive-www.moneypenny.com/uk/pocket-phone-system/#Emailhttps://test-www.moneypenny.com/uk/pocket-phone-system/#Email");
 	WebElement email1= driver.findElement(By.id("Email"));
-	email1.sendKeys("moneypennytest+aiswarya@gmail.com");
+	email1.sendKeys("moneypennytest+apgomiTechnology11465@gmail.com");
 	driver.findElement(By.xpath(prop.getProperty("go"))).click();
 	Thread.sleep(5000);
-	WebElement radioBtn = driver.findElement(By.xpath("(//div[@class='number-type__tab']//div/label)[1]"));
-	radioBtn.click();
+	//WebElement radioBtn = driver.findElement(By.xpath("(//div[@class='number-type__tab']//div/label)[1]"));
+	//radioBtn.click();
 		/*
 		 * WebElement region = driver.findElement(By.id("regionfilter"));
 		 * region.sendKeys("0161 - Manchester"); region.sendKeys(Keys.ENTER);
 		 */
-	driver.findElement(By.xpath("(//div[@class='numbers-check'])[4]")).click();
+	driver.findElement(By.xpath("(//div[@class='numbers-check'])[2]")).click();
 	
 	Thread.sleep(5000);
 	
-	driver.findElement(By.xpath("(//ul[@class='content pps-numbers-standard-list']//li//label)[1]")).click();
+	//driver.findElement(By.xpath("(//ul[@class='content pps-numbers-standard-list']//li//label)[1]")).click();
 
 	//driver.findElement(By.xpath("//div[@id='paging_container']/ul/li[1]/input/../div")).click();
 	driver.findElement(By.id("numbers-next")).click();
@@ -105,7 +105,5 @@ public class Ppsnationalnumber  {
 	
 }
 }
-
-
 
 
